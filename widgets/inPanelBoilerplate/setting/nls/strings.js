@@ -4,7 +4,8 @@ define({
     apiUrl: "http://api.avuxi.com",
     opacity: "Opacity",
     appId: "App ID",
-    apiKey: "API Key"
+    apiKey: "API Key",
+    warning: "The application ID is required"
   },
   "es": true,
 });

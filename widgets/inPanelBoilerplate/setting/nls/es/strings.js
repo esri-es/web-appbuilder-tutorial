@@ -3,5 +3,6 @@
     apiUrl: "http://api.avuxi.com",
     opacity: "Opacidad",
     appId: "App ID",
-    apiKey: "API Key"
+    apiKey: "API Key",
+    warning: "El ID de aplicación es obligatorio"
 });

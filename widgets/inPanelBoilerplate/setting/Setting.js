@@ -35,8 +35,8 @@ define([
         var config = this.config;
 
         // Si no existe la configuración, la creamos
-        config.inPanelButton = config.inPanelButton || {}
-        config.inPanelButton.params = config.inPanelButton.params || {}
+        config.inPanelVar = config.inPanelVar || {}
+        config.inPanelVar.params = config.inPanelVar.params || {}
 
         this.setConfig(this.config);
       },
@@ -44,7 +44,7 @@ define([
       // Al abrir la configuración del widget
       setConfig: function(config) {
         this.config = config;
-        var options = config.inPanelButton.params;
+        var options = config.inPanelVar.params;
 
         // Cargamos los valores si existen
         if (options && options.app_id) {
@@ -64,7 +64,7 @@ define([
           alert(this.nls.warning);
           return false;
         }
-        var options = this.config.inPanelButton.params;
+        var options = this.config.inPanelVar.params;
 
         // Almacenamos los valores
         options.opacity = this.opacity.value;

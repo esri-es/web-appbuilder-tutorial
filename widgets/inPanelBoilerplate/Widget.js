@@ -32,6 +32,11 @@ define([
       // tags:
       //      private
       this.inherited(arguments);
+      console.log('Avuxi::startup', arguments);
+      console.log('Opacity:' + this.config.inPanelVar.params.opacity)
+      console.log('API Key:' + this.config.inPanelVar.params.api_key)
+      console.log('App ID:' + this.config.inPanelVar.params.app_id)
+
       console.log('inPanelBoilerplate::startup', arguments);
     },
 
