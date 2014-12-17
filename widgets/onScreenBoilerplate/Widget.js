@@ -10,8 +10,8 @@ define([
 
   var clazz = declare([BaseWidget], {
     //these two properties are defined in the BaseWiget
-    baseClass: 'avuxi',
-    name: 'Avuxi',
+    baseClass: 'on-screen-boilerplate',
+    name: 'onScreenBoilerplate',
 
     // add additional properties here
 
@@ -39,9 +39,9 @@ define([
       console.log('App ID:' + this.config.AvuxiButton.params.app_id)
       var api_key = this.config.AvuxiButton.params.api_key;
       var app_id = this.config.AvuxiButton.params.app_id;
-
+      var map = this.map;
       dojo.byId('showAvuxi').onclick = function(){
-        var tiled = new WebTiledLayer("http://api.avuxi.com/v02/hm/sights/?z=${level}&x=${col}&y=${row}&o=0.6&app_id=b7cf594e&app_key=1725101d09c141aa52d72b9554bbb499&type=eating");
+        var tiled = new WebTiledLayer("http://api.avuxi.com/v02/hm/sights/?z=${level}&x=${col}&y=${row}&o=0.6&app_id="+app_id+"&app_key="+api_key+"&type=eating");
         map.addLayer(tiled);
       };
     },
